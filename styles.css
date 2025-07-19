@@ -1,54 +1,90 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body, html {
-  height: 100%;
-  font-family: 'Segoe UI', sans-serif;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Georgia", serif;
+    color: white;
+    overflow: hidden;
+    background: black;
 }
 
-.background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .overlay {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4vh 5vw;
+    background: rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
-.overlay h1 {
-  font-size: 48px;
-  margin-bottom: 40px;
-  letter-spacing: 4px;
+.title {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-container {
+    text-align: center;
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.form-container p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    resize: none;
 }
 
 button {
-  background-color: rgba(255, 255, 255, 0.85);
-  border: none;
-  padding: 14px 32px;
-  font-size: 18px;
-  border-radius: 24px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.bottom-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
 }
