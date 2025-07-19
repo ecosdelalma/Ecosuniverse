@@ -1,61 +1,17 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ecos Universe</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: linear-gradient(to bottom, #e0f7fa, #e1bee7);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Playfair Display', serif;
-      color: #2e2e2e;
-      overflow: hidden;
-      position: relative;
-    }
-    h1 {
-      font-size: 3em;
-      animation: fadeIn 3s ease-in-out;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .button {
-      margin-top: 2em;
-      padding: 1em 2em;
-      font-size: 1em;
-      background: rgba(255, 255, 255, 0.3);
-      border: 2px solid #ffffff;
-      border-radius: 30px;
-      color: #333;
-      cursor: pointer;
-      backdrop-filter: blur(10px);
-      transition: all 0.4s ease;
-    }
-    .button:hover {
-      background: rgba(255, 255, 255, 0.6);
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .particles {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
-      opacity: 0.05;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <div class="particles"></div>
-  <h1>Todo comienza con un eco…</h1>
-  <a href="auth.html"><button class="button">be ecos</button></a>
+  <div class="background"></div>
+  <div class="content">
+    <h1>ecos</h1>
+    <a href="auth.html" class="be-ecos-button">be ecos</a>
+  </div>
 </body>
 </html>
